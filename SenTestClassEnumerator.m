@@ -31,7 +31,7 @@
 #import "SenTestClassEnumerator.h"
 
 #ifndef RHAPSODY
-#import <objc/objc-runtime.h>
+#import <objc/runtime.h>
 #endif
 
 @implementation SenTestClassEnumerator

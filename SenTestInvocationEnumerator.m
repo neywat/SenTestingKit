@@ -74,7 +74,8 @@
             [self goNextMethodList];
         }
 #if defined (GNUSTEP)
-        if (sel_is_mapped(nextSelector)) {
+       // if (sel_is_mapped(nextSelector)) {
+       if (class_getMethodImplementation(class, nextSelector) != NULL) {
 #else
         if (sel_isMapped(nextSelector)) {
 #endif

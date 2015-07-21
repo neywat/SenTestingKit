@@ -30,11 +30,11 @@
 
 #import <Foundation/Foundation.h>
 #import <objc/objc.h>
-#if defined (GNUSTEP)
+/*#if defined (GNUSTEP)
 #import <objc/runtime.h>
-#else
+#else*/
 #import <objc/objc-class.h>
-#endif
+//#endif
 
 @interface SenTestInvocationEnumerator : NSObject
 {
