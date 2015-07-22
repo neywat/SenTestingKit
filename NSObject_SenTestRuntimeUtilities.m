@@ -99,6 +99,7 @@
 
     while ( (eachClass = [classEnumerator nextObject]) ) {
         @try {
+	    [eachClass description];
             if ([self senIsASuperclassOfClass:eachClass]) {
                 [subclasses addObject:eachClass];
             }
