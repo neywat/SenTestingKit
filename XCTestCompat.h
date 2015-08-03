@@ -16,3 +16,4 @@
 #define XCTAssertFalse(e) STAssertFalse(e,@#e)
 #define XCTAssert(e) STAssertTrue(e,@#e)
 #define XCTAssertThrows(e) STAssertThrows(e,@#e)
+#define XCTAssertNil(e) STAssertTrue((e == nil), @#e)
